@@ -1,0 +1,17 @@
+[project]
+name = "lerobot_custom_robots"
+version = "0.1.0"
+description = "Custom robot implementations for LeRobot"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lerobot",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lerobot_custom_robots*"]
